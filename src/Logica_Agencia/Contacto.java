@@ -26,5 +26,8 @@ public class Contacto {
     public void setTelefono(String telefono){
         this.telefono = telefono;
     }
-
+    @Override // Resolvi un bug que al momento de imprimir me salia los nombres de las clases y no en String, tuve que pedir a la IA que me ayude en este bug
+    public String toString(){
+        return nombre + ": " + telefono;
+    }
 }
